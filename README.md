@@ -1,5 +1,5 @@
-## Meta Angelz Project
-# 로드맵
+# Meta Angelz Project
+## 로드맵
 
 1. META ANGEL NFT 100개 한정 수량 발행
 2. META ANGEL의 핵심인 NFT 커뮤니티 디스코드와 홈페이지,트위터, 인스타 제작
@@ -12,7 +12,7 @@
 9. 메타버스 갤러리 제작하여 전시 및 홍보
 10. 메타앤젤 굿즈 제작
 
-# 세계관
+## 세계관
 
 💡 META HEAVEN.
 천국이라 불리는 이곳에는 META ANGEL들이 평화롭게 살아가는 곳이다.
