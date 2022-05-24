@@ -101,7 +101,7 @@ body {
 
 .angel_header .sns a {
   display: inline-block;
-  width: 40px;
+  width: 50px;
   height: 40px;
   text-align: center;
 }
@@ -233,7 +233,6 @@ body {
 
 #nft {
   width: 100%;
-  height: 950px;
   background-color: #fff;
   padding: 12rem 0;
 }
@@ -468,7 +467,7 @@ body {
 }
 
 .promise ul {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
@@ -478,17 +477,7 @@ body {
   position: relative;
   margin-bottom: 10px;
   color: #fff;
-}
-
-.promise ul li::before {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: -10px;
-  width: 3px;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #fff;
+  word-break: keep-all;
 }
 
 /*******************************************************/
@@ -658,10 +647,6 @@ body {
 /*******************************************************/
 
 @media (max-width: 1340px) {
-  .angel_header>a img {
-    width: 150px;
-  }
-
   .angel_header .gnb li a {
     padding: 0 10px;
     font-size: 14px;
@@ -686,8 +671,32 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
+  #main .mainNFT {
+    height: 70vh;
+    left: 80px;
+  }
 
+  #main .mainLogo {
+    top: 40%;
+    left: 45%;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  #main .mainNFT {
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50vh;
+  }
+
+  #main .mainLogo {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 25vh;
+  }
 
   /***************************************************/
 
@@ -705,7 +714,6 @@ body {
     text-align: center;
     font-size: 60px;
     font-weight: 900;
-    color: #fff;
   }
 
   .swiper_nft .nft-slide img {
@@ -714,17 +722,92 @@ body {
 
   /***************************************************/
 
+  #roadmap {
+    padding: 10rem 16px;
+  }
+
   #roadmap h2 {
     font-size: 60px;
   }
 
+  .roadmap {
+    max-width: 100%;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+  }
+
+  .roadCon {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 24px;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: rgba(99, 147, 181, 0.15);
+    z-index: 50;
+  }
+
+  .roadCon:nth-child(9) {
+    margin-left: 0px;
+  }
+
+  .roadCon::after {
+    display: none;
+  }
+
+  .roadCon .checkBox {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: none;
+    background-color: #6393B5;
+  }
+
+  .roadCon .checkBox.on {
+    background: #6393B5 url('images/wh_check.png') no-repeat center center/50%;
+  }
+
+  .roadCon .textBox {
+    margin-top: 0px;
+    padding: 30px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .roadCon .textBox h3 {
+    font-size: 15px;
+  }
+
+  .roadCon .textBox p {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .roadCon .textBox div p br {
+    display: none;
+  }
+
   /***************************************************/
+
+  #member {
+    padding: 12rem 16px;
+  }
 
   #member h2 {
     font-size: 60px;
   }
 
   /***************************************************/
+
+  #faq {
+    padding: 10rem 16px;
+  }
 
   #faq h2 {
     font-size: 60px;
@@ -737,11 +820,15 @@ body {
     padding-left: 0;
   }
 
-  .angel_header>a {
-    padding-left: 16px;
+  .angel_header > a img {
+    width: 30%;
   }
 
   .angel_header .gnb {
+    display: none;
+  }
+
+  .angel_header .sns {
     display: none;
   }
 
@@ -763,6 +850,23 @@ body {
     height: 70px;
     line-height: 70px;
     color: #fff;
+  }
+
+  .mobile_gnb .mobileSns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+
+  .mobile_gnb .mobileSns a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mobile_gnb .mobileSns a img {
+    width: 25px;
+    margin-top: 15px;
   }
 
   .gnb_btn {
@@ -821,7 +925,7 @@ body {
     z-index: 9000;
     width: 100%;
     height: 00vh;
-    background-color: #000;
+    background-color: #6393B5;
     transition: all 100ms ease-out;
   }
 
@@ -829,8 +933,11 @@ body {
 
   #main {
     width: 100%;
-    height: 820px;
-    background-color: #000;
+    background-color: #6393B5;
+  }
+
+  #main .back01 {
+    width: 100%;
   }
 
   .main_text_box {
@@ -869,6 +976,7 @@ body {
 
   .story_right {
     width: 100%;
+    padding: 0 6rem;
   }
 
   .story_right .no_1 {
@@ -879,8 +987,9 @@ body {
 
   .story_right .no_1 h2 {
     display: inline-block;
-    font-size: 24px;
+    font-size: 50px;
     font-weight: 900;
+    margin-bottom: 20px;
   }
 
   .story_right .no_1 h3 {
@@ -915,10 +1024,13 @@ body {
 
   /***************************************************/
 
+  #nft {
+    padding: 8rem 0;
+  }
+
   #nft h2 {
-    font-size: 28px;
+    font-size: 50px;
     font-weight: 900;
-    color: #fff;
   }
 
   .swiper_nft .nft-slide img {
@@ -945,86 +1057,32 @@ body {
   /***************************************************/
 
   #roadmap {
-    padding: 10rem 16px;
+    padding: 8rem 16px;
   }
 
   #roadmap h2 {
-    font-size: 28px;
-  }
-
-  .roadmap {
-    max-width: 100%;
-    margin: 50px auto 0;
-    display: flex;
-    flex-direction: column;
-    gap: 50px 0;
-  }
-
-  .roadCon {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    border-radius: 24px;
-    margin: 0 auto;
-    font-size: 14px;
-    background-color: rgba(0, 160, 226, 0.3);
-    z-index: 50;
-  }
-
-  .roadCon::after {
-    display: none;
-  }
-
-  .roadCon .checkBox {
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: none;
-    background-color: #00a0e2;
-  }
-
-  .roadCon .checkBox.on {
-    background: #00a0e2 url('images/wh_check.png') no-repeat center center/50%;
-  }
-
-  .roadCon .textBox {
-    margin-top: 0px;
-    padding: 30px;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .roadCon .textBox h3 {
-    font-size: 15px;
-  }
-
-  .roadCon .textBox p {
-    margin-top: 5px;
-    text-align: center;
-  }
-
-  .roadCon .textBox div p br {
-    display: none;
+    font-size: 50px;
   }
 
   /***************************************************/
 
   #member {
-    padding: 10rem 16px;
+    padding: 8rem 16px;
   }
 
   #member h2 {
-    font-size: 28px;
+    font-size: 50px;
+  }
+
+  #member > p {
+    font-size: 15px;
+    padding: 0 2rem;
   }
 
   .member_mate {
     max-width: 100%;
     display: flex;
-    margin: 50px auto 0;
+    margin: 70px auto;
     gap: 0 20px;
   }
 
@@ -1036,10 +1094,14 @@ body {
     margin-bottom: 5px;
   }
 
+  .promise ul li {
+    font-size: 15px;
+  }
+
   /***************************************************/
 
   #faq {
-    padding: 10rem 16px;
+    padding: 8rem 16px;
   }
 
   #faq h2 {
@@ -1091,16 +1153,33 @@ body {
     gap: 30px 0;
   }
 
-    
+  .angel_footer a {
+    margin-top: 0px;
+  }
 
+  .angel_footer a img {
+    width: 150px;
+  }
 
+  .angel_footer .textBox {
+    float: none;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
 
+@media (max-width: 600px) {
+  .story_right {
+    padding: 0;
+  }
+}
 
-
-
-
-
-
-
-
+@media (max-width: 400px) {
+  .promise ul {
+    padding: 0 2rem;
+  }
+  
+  #faq {
+    padding: 8rem 0;
+  }
 }
