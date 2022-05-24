@@ -120,11 +120,11 @@ body {
   background-color: #6393B5;
 }
 
-#main img {
+#main .mainNFT {
   position: absolute;
   height: 80vh;
   bottom: 0px;
-  left: 10%;
+  left: 100px;
   z-index: 100;
 }
 
@@ -144,6 +144,14 @@ body {
   width: 1595px;
   height: 612px;
   background: url('images/cloud02.png') no-repeat center/cover;
+}
+
+#main .mainLogo {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 500;
+  height: 40vh;
 }
 
 /*******************************************************/
@@ -415,7 +423,7 @@ body {
 #member {
   width: 100%;
   background-color: #6393B5;
-  padding: 15rem 0;
+  padding: 12rem 0;
 }
 
 #member h2 {
