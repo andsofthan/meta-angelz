@@ -227,7 +227,13 @@ body {
   color: #fff;
   line-height: 24px;
   word-break: keep-all;
+  margin-bottom: 5px;
 }
+
+.story_right .no_1:last-child {
+  margin-bottom: 0;
+}
+
 
 /*******************************************************/
 
@@ -290,9 +296,9 @@ body {
 }
 
 #nft .btn:hover {
-  background: -moz-linear-gradient(120deg, rgba(0, 160, 226, 0.7), rgba(12, 237, 55, 0.7));
-  background: -webkit-linear-gradient(120deg, rgba(0, 160, 226, 0.7), rgba(12, 237, 55, 0.7));
-  background: linear-gradient(120deg, rgba(0, 160, 226, 0.7), rgba(12, 237, 55, 0.7));
+  background: -moz-linear-gradient(120deg, rgba(99, 147, 181, 0.7), rgba(243, 175, 202, 0.7));
+  background: -webkit-linear-gradient(120deg, rgba(99, 147, 181, 0.7), rgba(243, 175, 202, 0.7));
+  background: linear-gradient(120deg, rgba(99, 147, 181, 0.7), rgba(243, 175, 202, 0.7));
 }
 
 #nft .btn img {
@@ -549,12 +555,12 @@ body {
   transform: translateY(-50%);
   width: 27px;
   height: 16px;
-  background: url("../../images/down_arrow.png") no-repeat center/cover;
+  background: url("images/down_arrow.png") no-repeat center/cover;
   transition: all .3s ease-in-out;
 }
 
 #faq ul li .q.open p::after {
-  background: url("../../images/up_arrow.png") no-repeat center/cover;
+  background: url("images/up_arrow.png") no-repeat center/cover;
   transform: translatey(-50%) rotate(360deg);
 }
 
@@ -628,7 +634,7 @@ body {
   position: fixed;
   right: 16px;
   bottom: 16px;
-  z-index: 9999;
+  z-index: 8000;
   border-radius: 5px;
   background-color: #F3AFCA;
   width: 40px;
@@ -1173,14 +1179,47 @@ body {
   .story_right {
     padding: 0;
   }
+
+  #faq ul li .q p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #faq ul li .q p::before {
+    left: 1rem;
+  }
+
+  #faq ul li .q p::after {
+    right: 1rem;
+  }
+
+  #faq ul li .a {
+    padding: 0;
+  }
+
+  #faq ul li .a p {
+    padding: 2rem 3rem;
+  }
+
+  #faq ul li .a p::after {
+    left: 1rem;
+  }
 }
 
 @media (max-width: 400px) {
+  .story_left img {
+    max-width: 100%;
+  }
+
+  #member > p {
+    padding: 0 1rem;
+  }
+
   .promise ul {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   
   #faq {
-    padding: 8rem 0;
+    padding: 8rem 16px;
   }
 }

@@ -52,7 +52,9 @@ $(function () {
       $('.gnb_bg').css({
         "height": "0vh"
       });
-      $('.mobile_gnb').stop().slideUp(300);
+      $('.mobile_gnb').css({
+        'display': 'none'
+      });
     } else {
       $(this).addClass('menu_on');
       $('.gnb_bg').css({
@@ -66,7 +68,9 @@ $(function () {
     $('.gnb_bg').css({
       "height": "0vh"
     });
-    $('.mobile_gnb').stop().slideUp(300);
+    $('.mobile_gnb').css({
+      'display' : 'none'
+    });
     $('.gnb_btn').removeClass('menu_on');
   });
 
@@ -74,7 +78,9 @@ $(function () {
     $('.gnb_bg').css({
       "height": "0vh"
     });
-    $('.mobile_gnb').stop().slideUp(300);
+    $('.mobile_gnb').css({
+      'display': 'none'
+    });
     $('.gnb_btn').removeClass('menu_on');
   });
 
